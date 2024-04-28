@@ -1,0 +1,24 @@
+<app-user-navbar
+[userName]="username"
+></app-user-navbar>
+<div class="books-container">
+    <app-books *ngIf="getUrl()=='/dashboard'">
+
+    </app-books>
+
+    <app-book-details *ngIf="compareWithRoutePraram()">
+
+    </app-book-details>
+
+    <app-rented-books *ngIf="getUrl()=='/rentedbooks'">
+
+    </app-rented-books>
+<!-- 
+    <app-rented-book-details *ngIf="getUrl()=='/rentdetails/id'">
+
+    </app-rented-book-details> -->
+
+    <app-profile *ngIf="getUrl()=='/profile'">
+
+    </app-profile>
+</div>

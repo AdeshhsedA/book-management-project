@@ -1,0 +1,16 @@
+<div class="navbar-container">
+    <div class="navbar-items-container">
+        <div class="navbar-item">
+            <h1 (click)="gotoDashboard()">Book Sphere</h1>
+        </div>
+        <div class="navbar-item navbar-menu">
+            <ul>
+                <li><a routerLink="/rentedbooks">Rented Books</a></li>
+                <li><a routerLink="/profile">Welcome, {{userName}}</a></li>
+                <!-- <li><a>MenuItem 3</a></li> -->
+            </ul>
+            <button class="logout-btn" (click)="logout()">Logout</button>
+        </div>
+       
+    </div>
+</div>

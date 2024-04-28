@@ -1,0 +1,13 @@
+<div class="book-container">
+    <div class="book-card-img-container">
+        <img [src]="currRentBook.bookImageUrl" alt="book-img" />
+    </div>
+
+    <div class="book-mini-detail-container">
+        <p>Title: {{currRentBook.bookTitle}}</p>
+        <p>Rent Date: {{currRentBook.rentedDate}}</p>
+        <p>Last Date: {{currRentBook.expectedReturnDate}}</p>
+    </div>
+
+    <button class="view-book-details-btn" (click)="returnBook()">Return Book</button>
+</div>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Book _Management_Final.props" />
+</Project>

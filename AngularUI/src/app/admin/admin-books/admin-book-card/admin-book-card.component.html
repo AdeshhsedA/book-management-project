@@ -1,0 +1,17 @@
+<div class="book-container">
+    <div class="book-card-img-container">
+        <img [src]="currBook.imageUrl" alt="book-img" />
+        <div class="view-book-box" (click)="gotoBookDetails()">View Book</div>
+    </div>
+
+    <div class="book-mini-detail-container">
+        <p>Title: {{currBook.title}}</p>
+        <p>Author: {{currBook.authorName}}</p>
+    </div>
+
+    <div class="admin-book-card-btn-container">
+        <button class="view-book-details-btn update-book-btn" (click)="gotoUpdate()" >Update Book</button>
+        <button class="view-book-details-btn delete-book-btn" (click)="deleteBook()" >Delete Book</button>
+    </div>
+</div>
+

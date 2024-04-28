@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\2317400\\source\\repos\\WebAPI\\Book _Management_Final\\Book _Management_Final\\wwwroot\\Images\\person_FILL1_wght400_GRAD0_opsz24.png",
+      "PackagePath": "staticwebassets\\Images\\person_FILL1_wght400_GRAD0_opsz24.png"
+    },
+    {
+      "Id": "C:\\Users\\2317400\\source\\repos\\WebAPI\\Book _Management_Final\\Book _Management_Final\\wwwroot\\Images\\sunrise-7674594_1280.jpg",
+      "PackagePath": "staticwebassets\\Images\\sunrise-7674594_1280.jpg"
+    },
+    {
+      "Id": "C:\\Users\\2317400\\source\\repos\\WebAPI\\Book _Management_Final\\Book _Management_Final\\wwwroot\\Images\\user.png",
+      "PackagePath": "staticwebassets\\Images\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\2317400\\source\\repos\\WebAPI\\Book _Management_Final\\Book _Management_Final\\wwwroot\\Images\\user_10337203.png",
+      "PackagePath": "staticwebassets\\Images\\user_10337203.png"
+    },
+    {
+      "Id": "C:\\Users\\2317400\\source\\repos\\WebAPI\\Book _Management_Final\\Book _Management_Final\\wwwroot\\Images\\user_456212.png",
+      "PackagePath": "staticwebassets\\Images\\user_456212.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Book _Management_Final.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Book _Management_Final.props",
+      "PackagePath": "build\\Book _Management_Final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Book _Management_Final.props",
+      "PackagePath": "buildMultiTargeting\\Book _Management_Final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Book _Management_Final.props",
+      "PackagePath": "buildTransitive\\Book _Management_Final.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

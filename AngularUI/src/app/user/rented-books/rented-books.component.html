@@ -1,0 +1,7 @@
+<div class="container">
+    <h1 class="books-heading">Rented Books</h1>
+    <div class="book-card-output-container" >
+    <app-rented-book-card class="book-card-output" *ngFor="let rentBook of rentedbooks"  [currRentBook]="rentBook"></app-rented-book-card>
+    <!-- <app-rented-book-details></app-rented-book-details> -->
+    </div>
+</div>

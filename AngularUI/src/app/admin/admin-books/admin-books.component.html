@@ -1,0 +1,9 @@
+<div class="container">
+    <h1 class="books-heading">Books</h1>
+<div class="book-cards-container" >
+    
+    <div class="book-card-output-container">
+        <app-admin-book-card *ngFor="let book of books" class="book-card-output" [currBook]="book"></app-admin-book-card>
+    </div>
+</div>
+</div>

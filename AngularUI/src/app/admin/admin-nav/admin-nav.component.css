@@ -1,0 +1,146 @@
+.nav-container-outer{
+    
+    display: block;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    z-index:999;
+    background-color: black;
+    color:#fff;
+    box-shadow: 0px 2px 20px white;
+}
+
+.nav-container-inner{
+    /* border:2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+}
+
+.nav-heading-box>h1{
+    /* border: 2px solid red; */
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px lightseagreen;
+}
+
+.nav-heading-box>h1:hover{
+    color:lightseagreen;
+}
+
+.nav-menu-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.add-book-link{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+.admin-logout-btn{
+    /* background-color: rgb(120, 0, 0); */
+    background-color: #fff;
+    color:black;
+    border:0;
+    padding:4px 20px;
+    font-weight: bold;
+    font-size:13px;
+    box-shadow: 0px 0px 10px red;
+    margin-top:20px;
+
+}
+
+.admin-logout-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.menu-btn{
+    background-color: black;
+    color:#fff;
+    border:0;
+    font-size:20px;
+    padding:4px;
+    margin:0;
+}
+
+
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    /* border:2px solid red; */
+    position:absolute;
+    top:60Px;
+    right:0;
+    width:200px;
+    padding:20px 0px;
+    background-color: black;
+    transform:translateX(250px);
+    transition: transform 1s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+
+.side-menu>div{
+    /* border:0px solid #fff; */
+    /* border:1px 0px; */
+    /* width: 100%; */
+    text-align: center;
+    margin:0px;
+    padding:5px 0px;
+}
+
+.side-menu>div:hover{
+    background-color: lightseagreen;
+    color:#fff;
+}
+
+.add-author-form-container{
+    /* border:2px solid red; */
+    overflow: hidden;
+    display: none;
+    padding:10px 0px;
+}
+
+.add-author-form-container:hover{
+    background-color: inherit !important;
+}
+
+.add-author-form-container>input{
+    width:80%;
+    /* margin-bottom: 10px; */
+    background-color: #000;
+    color:#fff;
+    border:0;
+    border-bottom: 2px solid white;
+    outline: 0;
+    padding:4px 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-author-form-container>input:hover, .add-author-form-container>input:focus{
+    background-color: #dadada;
+    color:#000;
+}
+
+.add-btn{
+    width:60%;
+    background-color: lightseagreen;
+    box-shadow: none;
+}
+
+.add-btn:hover{
+    background-color: rgb(0, 109, 103);
+}

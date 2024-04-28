@@ -1,0 +1,349 @@
+[
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.AuthorsController",
+    "Method": "GetAllAuthors",
+    "RelativePath": "api/Authors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.AuthorsController",
+    "Method": "GetAuthorById",
+    "RelativePath": "api/Authors/{authorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.AuthorsController",
+    "Method": "AddAuthor",
+    "RelativePath": "api/Authors/addAuthor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorReq",
+        "Type": "Book__Management_Final.BusinessLogic.DTO.Author.AuthorRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.AuthorsController",
+    "Method": "GetAuthorsByName",
+    "RelativePath": "api/Authors/ByName/{authorName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.BooksController",
+    "Method": "GetAllBooks",
+    "RelativePath": "api/Books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.BooksController",
+    "Method": "GetBookById",
+    "RelativePath": "api/Books/{bookId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.BooksController",
+    "Method": "UpdateBook",
+    "RelativePath": "api/Books/{bookId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookReq",
+        "Type": "Book__Management_Final.BusinessLogic.DTO.Book.BookRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.BooksController",
+    "Method": "RemoveBook",
+    "RelativePath": "api/Books/{bookId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.BooksController",
+    "Method": "AddBook",
+    "RelativePath": "api/Books/AddBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookReq",
+        "Type": "Book__Management_Final.BusinessLogic.DTO.Book.BookRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.BooksController",
+    "Method": "GetBookByISBN",
+    "RelativePath": "api/Books/isbn/{isbn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isbn",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.BooksController",
+    "Method": "UploadImage",
+    "RelativePath": "api/Books/uploadFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.RentedBooksController",
+    "Method": "GetDeletedRentedBookList",
+    "RelativePath": "api/RentedBooks/Deleted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.RentedBooksController",
+    "Method": "DeleteRentedDetail",
+    "RelativePath": "api/RentedBooks/DeleteRentedDetails/{rentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.RentedBooksController",
+    "Method": "GetCurrentRentedBookList",
+    "RelativePath": "api/RentedBooks/NotReturned",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.RentedBooksController",
+    "Method": "RentBook",
+    "RelativePath": "api/RentedBooks/rentbook/{bookId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.RentedBooksController",
+    "Method": "ReturnBook",
+    "RelativePath": "api/RentedBooks/returnBook/{bookId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.RentedBooksController",
+    "Method": "GetReturnedBookList",
+    "RelativePath": "api/RentedBooks/Returned",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.RentedBooksController",
+    "Method": "GetUserRentDetails",
+    "RelativePath": "api/RentedBooks/UserRentedDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.SubjectsController",
+    "Method": "GetAllSubjectList",
+    "RelativePath": "api/Subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.SubjectsController",
+    "Method": "GetSubjectById",
+    "RelativePath": "api/Subjects/{subjectId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.SubjectsController",
+    "Method": "AddSubject",
+    "RelativePath": "api/Subjects/addSubject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectReq",
+        "Type": "Book__Management_Final.BusinessLogic.DTO.Subject.SubjectRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.SubjectsController",
+    "Method": "GetSubjectByName",
+    "RelativePath": "api/Subjects/ByName/{subjectName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "subjectName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "api/Users/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLoginDTO",
+        "Type": "Book__Management_Final.BusinessLogic.DTO.User.UserLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Book__Management_Final.API.Controllers.UsersController",
+    "Method": "Register",
+    "RelativePath": "api/Users/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userReq",
+        "Type": "Book__Management_Final.BusinessLogic.DTO.User.UserRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

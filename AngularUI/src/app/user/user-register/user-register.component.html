@@ -1,0 +1,52 @@
+<div class="form-container">
+    <div class="login-form-container">
+        <h3 class="login-h3-heading">Register</h3>
+        <form class="form-box">
+            <div class="input-container-group">
+                <div class="input-container">
+                    <label>Name</label>
+                    <br>
+                    <input type="text" class="login-input" (input)="OnInputName($event)" name="name" placeholder="Name" />
+                </div>
+    
+                <div class="input-container">
+                    <label>Email</label>
+                    <br>
+                    <input type="email" class="login-input" (input)="OnInputEmail($event)" name="email" placeholder="Email" />
+                </div>
+            </div>
+
+            <div class="input-container-group">
+                <div class="input-container">
+                    <label>Password</label>
+                    <br>
+                    <input type="password" class="login-input" (input)="OnInputPassword($event)" name="password" placeholder="Password" />
+                </div>
+    
+                <div class="input-container">
+                    <label>Confirm Password</label>
+                    <br>
+                    <input type="password" class="login-input" (input)="OnInputConfirmPassword($event)" name="confirm-password" placeholder="Confirm Password" />
+                </div>
+            </div>
+
+            <div class="input-container-group">
+                <div class="input-container">
+                    <label>Contact</label>
+                    <br>
+                    <input type="number" class="login-input" (input)="OnInputContact($event)" name="contact" placeholder="Contact" />
+                </div>
+            </div>
+
+            <p class="exist-email-error-msg" id="exist-email-error-message">{{existEmailError}}</p>
+
+            <div class="register-login-btn-container">
+                <button class="register-btn login-btn" (click)="registerUser($event)">Register</button>
+            
+
+                <p>Existing User?</p>
+                <button class="login-btn" routerLink="/login">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+<div class="form-container">
+    <div class="login-form-container">
+        <h3 class="login-h3-heading">Add Book</h3>
+        <form class="form-box">
+            <div class="input-container-group">
+                <div class="input-container">
+                    <label for="title">Book Title</label>
+                    <br>
+                    <input type="text" class="login-input" id="title" (input)="setBookTitle($event)"  name="title" placeholder="Book Title" />
+                </div>
+    
+                <div class="input-container">
+                    <label for="isbn">ISBN</label>
+                    <br>
+                    <input type="number" class="login-input" id="isbn" (input)="setBookISBN($event)" name="isbn" placeholder="ISBN" />
+                </div>
+            </div>
+
+            <div class="input-container-group">
+                <div class="input-container author-options-class">
+                    <label for="author-options" >Select Author</label>
+                    <br>
+                    <select class="login-input " (change)="getSelectedAuthor($event)" id="author-options">
+                        <option value="0">None Selected</option>
+                        <option *ngFor="let author of authors"  value="{{author.id}}">{{author.name}}</option>
+                        <!-- <option>Author</option> -->
+
+                    </select>
+                </div>
+
+                <div class="input-container author-options-class">
+                    <label for="category-options">Select Category</label>
+                    <br>
+                    <select class="login-input"  id="category-options" (change)="getSelectedCategory($event)">
+                        <option value="0">None Selected</option>
+                        <option *ngFor="let category of categories" value="{{category.id}}">{{category.name}}</option>
+                        <!-- <option>Category</option> -->
+                    </select>
+                </div>
+            </div>
+            <div class="input-container-group">
+                <div class="input-container file-input-container">
+                    <label>Select Image File (jpeg/png):</label>
+                    <br>
+                    <input class="select-file-input" type="file" (change)="onChangeFile($event)"/>
+                </div>
+            </div>
+
+            <div class="input-container-group">
+                <div class="input-container author-options-class">
+                    <label for="book-shlef-options">Book Shelf Number</label>
+                    <br>
+                    <select class="login-input" (change)="setBookShelfNo($event)" id="book-shlef-options">
+                        <option value=0>None Selected</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+
+                    </select>
+                </div>
+
+                <div class="input-container author-options-class">
+                    <label for="shlef-row-options">Shelf Row Number</label>
+                    <br>
+                    <select class="login-input" (change)="setBookShelfRowNo($event)"  id="shlef-row-options">
+                        <option value=0>None Selected</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+
+                    </select>
+                </div>
+
+                
+            </div>
+            <div class="input-container description-container">
+                <label for="description">Description</label>
+                <br>
+                <textarea class="description-text-area" (input)="setBookDescription($event)" id="description" placeholder="Book Description">
+
+                </textarea>
+            </div>
+
+            <div class="register-login-btn-container">
+                <button class="register-btn login-btn" (click)="addBook($event)">Add Book</button>
+            
+            </div>
+        </form>
+    </div>
+</div>

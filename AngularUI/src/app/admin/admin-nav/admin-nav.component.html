@@ -1,0 +1,37 @@
+<div class="nav-container-outer">
+    <div class="nav-container-inner">
+        <div class="nav-heading-box">
+            <h1 routerLink="/admindashboard">Book Sphere</h1>
+        </div>
+
+        <div class="nav-menu-box">
+            
+
+            <button class="glyphicon glyphicon-align-justify menu-btn" (click)="toggleSideMenu()"></button>
+        </div>
+
+        <div class="side-menu" id="side-menu-container">
+            <div routerLink="/addbook">
+                <a class="add-book-link" >Add Book</a>
+            </div>
+
+            <div (click)="toggleAddAuthor()">
+                <a class="add-book-link" >Add Author</a>
+                
+            </div>
+            <div class="add-author-form-container" id="add-author-form">
+                <input type="text" [(ngModel)]="author.name" placeholder="Author Name"/>
+                <button class="admin-logout-btn add-btn" (click)="addAuthor()">Add</button>
+            </div>
+
+            <div (click)="toggleAddCategory()">
+                <a class="add-book-link" >Add Category</a>
+            </div>
+            <div class="add-author-form-container" id="add-category-form">
+                <input type="text" [(ngModel)]="category.name" placeholder="Category Name"/>
+                <button class="admin-logout-btn add-btn" (click)="addCategory()">Add</button>
+            </div>
+            <button class="admin-logout-btn" (click)="logout()">Logout</button>
+        </div>
+    </div>
+</div>

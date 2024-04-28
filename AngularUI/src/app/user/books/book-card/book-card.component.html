@@ -1,0 +1,12 @@
+<div class="book-container">
+    <div class="book-card-img-container">
+        <img [src]="book.imageUrl" alt="book-img" />
+    </div>
+
+    <div class="book-mini-detail-container">
+        <p>Title: {{book.title}}</p>
+        <p>Author: {{book.authorName}}</p>
+    </div>
+
+    <button class="view-book-details-btn" (click)="gotoBookDetails()">View Book Details</button>
+</div>

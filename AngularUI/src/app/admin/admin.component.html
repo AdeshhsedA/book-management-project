@@ -1,0 +1,12 @@
+<app-admin-nav></app-admin-nav>
+<div class="admin-outer-container">
+    
+    <app-admin-books *ngIf="getUrl()=='/admindashboard'"></app-admin-books>
+    <app-add-book-form *ngIf="getUrl()=='/addbook'"></app-add-book-form>
+
+    <app-admin-book-details *ngIf="compareWithRoutePraram()">
+
+    </app-admin-book-details>
+
+    <app-update-book-form *ngIf="compareWithRoutePraramUpdate()"></app-update-book-form>
+</div>

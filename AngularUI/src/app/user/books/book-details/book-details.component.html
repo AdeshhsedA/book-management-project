@@ -1,0 +1,44 @@
+
+<div class="book-details-container">
+
+    <div class="book-details-h2">
+        <h2>Book Details</h2>
+    </div>
+    <div class="book-left-right-container">
+        <div class="left">
+            <div class="book-details-img-container">
+                <img [src]="currBook.imageUrl" alt="book-image.jpg" />
+            </div>
+            <div class="rent-book-btn-container">
+                <p id="available-text">{{availableText}}</p>
+                <button [disabled]="!isAvailable" class="rent-book-btn" (click)="rentBook()" >Rent this book</button>
+            </div>
+        </div>
+    
+        <div class="right">
+            <div>
+                <p><b>Title: <span>{{currBook.title}}</span></b></p>
+            </div>
+            <div>
+                <p><b>ISBN: <span>{{currBook.isbn}}</span></b></p>
+            </div>
+
+            <div>
+                <p><b>Author: <span>{{currBook.authorName}}</span></b></p>
+            </div>
+
+            <div>
+                <p><b>Category: <span>{{currBook.subjectName}}</span></b></p>
+            </div>
+
+            <div>
+                <p><b>Location: <span>{{currBook.subjectName}} section, {{currBook.bookShelfNo}} Shelf, {{currBook.shelfRowNo}} row</span></b></p>
+            </div>
+            <div>
+                <p><b>Description: <span>{{currBook.description}}</span></b></p>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
